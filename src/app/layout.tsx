@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AI Coding Starter Kit",
-  description: "Built with AI Agent Team System",
+  title: "Biologielabor Dashboard | EFG Schwarzheide",
+  description:
+    "Projektdashboard für die Modernisierung des Biologielabors am Emil-Fischer-Gymnasium Schwarzheide.",
 };
 
 export default function RootLayout({
@@ -12,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="antialiased">
+    <html lang="de" className="dark">
+      <body className="antialiased bg-slate-950 text-slate-100">
         {children}
       </body>
     </html>
